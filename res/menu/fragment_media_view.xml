@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item android:id="@+id/menu_item_upvote_num"
+       android:title="@string/upvote"
+       android:showAsAction="ifRoom|withText" />
+    
+   <item android:id="@+id/menu_item_upvote"
+       android:icon="@drawable/uparrow"
+       android:title="@string/upvote"
+       android:showAsAction="ifRoom|withText" />
+   <item android:id="@+id/menu_item_flag"
+       android:icon="@drawable/red_flag"
+       android:title="@string/report"
+       android:showAsAction="ifRoom|withText" />
+   
+
+</menu>

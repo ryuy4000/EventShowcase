@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/view_background" >
+
+    
+    <ImageView
+        android:id="@+id/medialist_imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@android:color/darker_gray"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/media_list_item_dateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignLeft="@+id/media_list_item_titleTextView"
+        android:layout_alignRight="@+id/media_list_item_titleTextView"
+        android:layout_below="@id/media_list_item_titleTextView"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+        android:text="Media date" />
+
+    <TextView
+        android:id="@+id/media_list_item_titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:layout_alignParentTop="true"
+        android:textColor="#FFA500"
+        android:layout_toRightOf="@+id/medialist_imageView"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="Media title"
+        android:textStyle="bold" />
+
+ 
+
+    <TextView
+        android:id="@+id/media_list_item_voteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="0" />
+
+</RelativeLayout>
