@@ -23,7 +23,7 @@ The application gets and posts all of its data through a server linked to a MySQ
 
 The MySQL database is accessed by a PHP file stored on the server that collects and displays a JSON String in a text file format that can be publicly accessed. From there an AsyncTask (done in the background while the app works) reads the JSON String information into the app and converts it into the necessary variables. From there the app can use the variables. When a user wants to post to the server, an AsyncTask calls upon a PHP POST script, which gathers parameters and inserts them as values into the MySQL database.
 
-	To fully understand the application it is necessary to see how user interactions affect the back end and controller Java classes that run the app. Below is a description of Java class roles and how they interconnect to create a simple to use experience.
+To fully understand the application it is necessary to see how user interactions affect the back end and controller Java classes that run the app. Below is a description of Java class roles and how they interconnect to create a simple to use experience.
 
 The Event List Fragment displays a list of all of the events that have been created on the app. It retrieves the Event name, start date, end date, and zip code and displays each in list form to the user. When the user clicks on an event, they are taken to the Media List associated with the event. When they click on the “+” button they are taken to the Event Fragment to enter information to create an event.
 
